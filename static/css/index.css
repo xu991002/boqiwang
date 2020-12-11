@@ -10,4 +10,197 @@ text-decoration: none;
 }
 .wrap{
     width: 100%;
+    background-color: #fff;
 }
+.header{
+    width: 100%;
+}
+.toolbar{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #ddd;
+}
+.toolbar-auto{
+    width: 1190px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.toolbar a{
+    color: #000;
+    font-size: 14px;
+}
+.toolbar a:hover{
+    text-decoration: underline;
+    color: #ff6655;
+}
+.toolbar-left{
+    width: 354px;
+    display: flex;
+    justify-content: space-between;
+}
+.toolbar-right{
+    width: 369px;
+    height: 16px;
+    line-height: 16px;
+    margin: 10px 0 0;
+    display: flex;
+    
+}
+.toolbar-right a{
+    padding:  0 13px;
+}
+.toolbar-registered{
+    border-left: 1px solid #999;
+}
+.toolbar-weibo{
+    border-left: 1px solid #999;
+}
+.toolbar-weixin{
+    border-left: 1px solid #999;
+}
+.toolbar-phone{
+    border-left: 1px solid #999;
+}
+.toolbar-weibo .ico1{
+    font-size: 18px;
+    color: #E71F19;
+    padding: 0 7px 0 0;
+}
+.toolbar-weixin .ico2{
+    font-size: 18px;
+    color: #1FBD00;
+    padding: 0 7px 0 0;
+}
+.top-auto{
+    width: 1190px;
+    height: 88px;
+    margin: 0 auto;
+    margin-top: 10px;
+    /* display: flex; */
+    position: relative;
+}
+.top-auto>div{
+    float: left;
+}
+.logo{
+    width: 180px;
+    height: 88px;
+}
+.top-search{
+    width: 590px;
+    margin: 25px 0 0 75px;
+    display: flex;
+}
+.search-left{
+    width: 496px;
+    height: 34px;
+    border: 2px solid #f65;
+    border-right: none;
+}
+input{
+    list-style: none;
+    border: none;
+    outline: none;
+}
+.search{
+    width: 385px;
+    height: 20px;
+    padding: 7px 10px;
+    float: left;
+    font: 14px/20px "Microsoft YaHei","微软雅黑",tahoma,arial,sans-serif;
+    background: none;
+}
+.search-btn{
+    background: #f65;
+    height: 38px;
+    width: 92px;
+    cursor: pointer;
+    float: left;
+    font: 18px/34px "Microsoft YaHei","微软雅黑",tahoma,arial,sans-serif;
+    color: #fff;
+    border: none;
+}
+.search-list{
+    position: absolute;
+    left: 255px;
+    top: 70px;
+    color: #666;
+    font-size: 12px;
+}
+.search-list a{
+    color: #666;
+    margin: 0 6px 0 0;
+}
+.search-list a:hover{
+    color: #ff6655;
+}
+.top-ad{
+    width: 220px;
+    height: 60px;
+    margin: 13px 0 0;
+}
+.top-auto .right{
+    float: right;
+}
+.nav{
+    width: 100%;
+    background-color: #FF6655;
+    margin: 10px 0 0;
+}
+.nav-auto{
+    width: 1190px;
+    height: 44px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list{
+    width: 684px;
+    display: flex;
+    height: 44px;
+    line-height: 44px;
+    justify-content: space-between;
+}
+.nav-item a{
+    font-size: 18px;
+    color: #fff;
+}
+.wap{
+    width: 122px;
+    height: 44px;
+}
+.wap a{
+    font: 18px/18px "Microsoft YaHei","微软雅黑",tahoma,arial,sans-serif;
+    color: #FFF;
+    display: block;
+    padding: 13px 15px 0;
+    height: 31px;
+    border-left: 1px solid #e35342;
+    border-right: 1px solid #e35342;
+}
+.wap em{
+    float: left;
+    width: 11px;
+    height: 17px;
+    background: url('../image/index.icon.png') no-repeat;
+    padding: 0 7px 0 0;
+    margin: 1px 0 0;
+}
+.nav-item em{
+    background: url('../image/index.icon.png') no-repeat -143px 0;
+    width: 9px;
+    height: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 5px;
+}
+.nav-item .market{
+    background: url('../image/index.icon.png') no-repeat -143px 0;
+    background-position: -220px -58px;
+    width: 23px;
+    height: 15px;
+    margin: 0 5px 0 0;
+}
+

@@ -51,7 +51,7 @@ app.get('/index', function (req, res) {
       res.send('hello world')
     })
     
-    //   小宠
+//   小宠
   app.get('/pet', function (req, res) {
     res.send('hello world')
   })
