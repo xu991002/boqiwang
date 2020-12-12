@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/index.js"></script>
     <link rel="shortcut icon" href="http://www.boqii.com/favicon.ico">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_2073507_llc008ratgr.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <script src="./js/swiper.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>宠物网,宠物猫,宠物狗,波奇宠物网</title>
 </head>
 
@@ -31,14 +33,34 @@
                             <a href="javascript:;">注册</a>
                         </li>
                         <li class="toolbar-weibo">
-                            <a href="javascript:;"><i class="iconfont icon-weibo ico1"></i>微博</a>
+                            <a href="javascript:;">
+                                <em class="weibo"></em>
+                                微博</a>
+                            <div class="wb-select">
+                                <img src="./image/index.wb.jpg" alt="">
+                            </div>
                         </li>
                         <li class="toolbar-weixin">
-                            <a href="javascript:;"><i class="iconfont icon-weixin ico2"></i>微信</a>
+                            <a href="javascript:;"><em class="weixin"></em>微信</a>
+                            <div class="wx-select">
+                                <img src="./image/index.wb.jpg" alt="">
+                            </div>
                         </li>
                         <li class="toolbar-phone">
-                            <i></i>
-                            <a href="javascript:;">手机版</a>
+                            <a href="javascript:;"><em class="tel"></em>手机版</a>
+                            <dl class="phone-select">
+                                <dt>
+                                    <img src="./image/index.wb.jpg" alt="">
+                                </dt>
+                                <dd class="name">波奇宠物APP</dd>
+                                <dd style="font-size: 12px;">注册享270，首单送330</dd>
+                                <dd>
+                                    <a class="iphone" href="javascript:;"></a>
+                                </dd>
+                                <dd>
+                                    <a class="android" href="javascript:;"></a>
+                                </dd>
+                            </dl>
                         </li>
                     </ul>
                 </div>
@@ -123,10 +145,10 @@
                             </a>
                         </p>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item r">
                         <p>
-                            <em class="market"></em>
-                            <a href="javascript:;">波奇商城
+
+                            <a href="javascript:;"><em class="market"></em>波奇商城
                             </a>
                         </p>
                     </li>
@@ -140,8 +162,44 @@
                 </div>
             </div>
         </div>
+        <!-- 导航结束 -->
+
+        <!--主体内容开始 -->
+        <div class="content">
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="javascript:;">
+                            <img src="./image/index.img5837591bfbb3dd49a.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:;">
+                            <img src="./image/index.img9380591bfb8f73c86.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:;">
+                            <img src="./image/index.img31935ef876e549dca.jpg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination" id="swiper"></div>
+
+            </div>
+
+
+        </div>
+
 
     </div>
+
+
+
+    <script src="./js/index.js"></script>
 
 </body>
 

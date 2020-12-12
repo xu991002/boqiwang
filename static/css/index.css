@@ -42,43 +42,155 @@ text-decoration: none;
 }
 .toolbar-right{
     width: 369px;
-    height: 16px;
+    height: 26px;
     line-height: 16px;
-    margin: 10px 0 0;
     display: flex;
-    
+}
+.toolbar-right li{
+    margin: 10px 0 0;
+    padding:  0 13px;
 }
 .toolbar-right a{
-    padding:  0 13px;
+    display: inline-block;
+    
 }
 .toolbar-registered{
     border-left: 1px solid #999;
 }
 .toolbar-weibo{
+    width: 58px;
     border-left: 1px solid #999;
+    position: relative;
+    z-index: 10;
 }
 .toolbar-weixin{
+    position: relative;
+    width: 58px;
     border-left: 1px solid #999;
 }
 .toolbar-phone{
+    width: 63px;
+    position: relative;
     border-left: 1px solid #999;
 }
-.toolbar-weibo .ico1{
-    font-size: 18px;
-    color: #E71F19;
-    padding: 0 7px 0 0;
+.wb-select{
+    position: absolute;
+    top: 36px;
+    right: -1px;
+    background: #FFF;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+    z-index: 1;
+    display: none;
 }
-.toolbar-weixin .ico2{
-    font-size: 18px;
-    color: #1FBD00;
-    padding: 0 7px 0 0;
+.toolbar-weibo:hover{
+    height: 26px;
+    padding: 9px 13px 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    margin-right: -1px;
+    width: 58px;
+}
+.toolbar-weibo:hover .wb-select{
+    display: block;
+}
+.wx-select{
+    position: absolute;
+    top: 36px;
+    right: -1px;
+    background: #FFF;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+    display: none;
+    z-index: 1;
+}
+.toolbar-weixin:hover{
+    height: 26px;
+    padding: 9px 13px 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    margin-right: -1px;
+    width: 58px;
+}
+.toolbar-weixin:hover .wx-select{
+    display: block;
+}
+.phone-select{
+    position: absolute;
+    top: 36px;
+    right: -1px;
+    background: #FFF;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+    overflow: hidden;
+    width: 230px;
+    z-index: 1;
+    display: none;
+}
+.toolbar-right a em{
+    float: left;
+    width: 17px;
+    height: 16px;
+    padding-right: 7px;
+    background: url('../image/index.toolbar.png') no-repeat;
+}
+.toolbar-weibo .weibo{
+    background-position: 0 0;
+}
+.toolbar-weixin .weixin{
+    background-position: -34px 0;
+}
+.toolbar-phone .tel{
+    background-position: -71px 0;
+    width: 10px;
+}
+.toolbar-phone:hover{
+    height: 26px;
+    padding: 9px 13px 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    margin-right: -1px;
+    width: 62px;
+}
+.toolbar-phone:hover .phone-select{
+    display: block;
+}
+.phone-select dt{
+    width: 100px;
+    margin-right: 10px;
+    float: left;
+}
+.phone-select dd{
+    color: #f65;
+    font: 14px/16px "Microsoft YaHei";
+    padding-bottom: 3px;
+    overflow: hidden;
+}
+.phone-select .name{
+    color: #666;
+}
+.phone-select .iphone{
+    background: url('../image/index.foot.png')no-repeat -283px -62px;
+    width: 90px;
+    height: 28px;
+    margin-right: 6px;
+}
+.phone-select .android{
+    background: url('../image/index.foot.png')no-repeat -395px -62px;
+    width: 90px;
+    height: 28px;
 }
 .top-auto{
     width: 1190px;
     height: 88px;
     margin: 0 auto;
     margin-top: 10px;
-    /* display: flex; */
     position: relative;
 }
 .top-auto>div{
@@ -161,7 +273,6 @@ input{
     display: flex;
     height: 44px;
     line-height: 44px;
-    justify-content: space-between;
 }
 .nav-item a{
     font-size: 18px;
@@ -203,4 +314,46 @@ input{
     height: 15px;
     margin: 0 5px 0 0;
 }
-
+.nav-item{
+    width: 90px;
+    text-align: center;
+    border-left: 1px solid #e35342;
+}
+.r em{
+    transform: rotate(0) !important;
+}
+.r{
+    width: auto;
+    border-right: 1px solid #e35342;
+}
+.r p{
+    padding: 0 18px;
+}
+.nav-item:hover em{
+    transform: rotate(180deg);
+}
+.swiper-slide{
+    text-align: center;
+}
+.swiper-pagination .swiper-pagination-bullet{
+    float: left;
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    font: 18px/28px "Arial", "微软雅黑", tahoma, arial, sans-serif;
+    text-align: center;
+    color: #666;
+    background: #fff;
+    cursor: pointer;
+    margin-right: 8px;
+    opacity: 1;
+}
+#swiper{
+    bottom: 20px;
+    left: 371px;
+    width: 120px;
+}
+.swiper-pagination-bullet-active{
+    background-color: #ff6655 !important;
+    color: #fff !important;
+}
