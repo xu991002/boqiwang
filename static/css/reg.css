@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+text-decoration: none;
+}
+
+.header{
+    width: 100%;
+}
+.toolbar{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #ddd;
+}
+.toolbar-auto{
+    width: 1190px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.toolbar a{
+    color: #000;
+    font-size: 14px;
+}
+.toolbar a:hover{
+    text-decoration: underline;
+    color: #ff6655;
+}
+.toolbar-left{
+    width: 354px;
+    display: flex;
+    justify-content: space-between;
+}
+.toolbar-right{
+    width: 369px;
+    height: 26px;
+    line-height: 16px;
+    display: flex;
+}
+.toolbar-right li{
+    margin: 10px 0 0;
+    padding:  0 13px;
+}
+.toolbar-right a{
+    display: inline-block;
+    
+}
+.toolbar-registered{
+    border-left: 1px solid #999;
+}
+.toolbar-weibo{
+    width: 58px;
+    border-left: 1px solid #999;
+    position: relative;
+    z-index: 10;
+}
+.toolbar-weixin{
+    position: relative;
+    width: 58px;
+    border-left: 1px solid #999;
+}
+.toolbar-phone{
+    width: 63px;
+    position: relative;
+    border-left: 1px solid #999;
+}
+.wb-select{
+    position: absolute;
+    top: 36px;
+    right: -1px;
+    background: #FFF;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+    z-index: 1;
+    display: none;
+}
+.toolbar-weibo:hover{
+    height: 26px;
+    padding: 9px 13px 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    margin-right: -1px;
+    width: 58px;
+}
+.toolbar-weibo:hover .wb-select{
+    display: block;
+}
+.wx-select{
+    position: absolute;
+    top: 36px;
+    right: -1px;
+    background: #FFF;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+    display: none;
+    z-index: 1;
+}
+.toolbar-weixin:hover{
+    height: 26px;
+    padding: 9px 13px 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    margin-right: -1px;
+    width: 58px;
+}
+.toolbar-weixin:hover .wx-select{
+    display: block;
+}
+.phone-select{
+    position: absolute;
+    top: 36px;
+    right: -1px;
+    background: #FFF;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+    overflow: hidden;
+    width: 230px;
+    z-index: 1;
+    display: none;
+}
+.toolbar-right a em{
+    float: left;
+    width: 17px;
+    height: 16px;
+    padding-right: 7px;
+    background: url('../image/index.toolbar.png') no-repeat;
+}
+.toolbar-weibo .weibo{
+    background-position: 0 0;
+}
+.toolbar-weixin .weixin{
+    background-position: -34px 0;
+}
+.toolbar-phone .tel{
+    background-position: -71px 0;
+    width: 10px;
+}
+.toolbar-phone:hover{
+    height: 26px;
+    padding: 9px 13px 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    margin-right: -1px;
+    width: 62px;
+}
+.toolbar-phone:hover .phone-select{
+    display: block;
+}
+.phone-select dt{
+    width: 100px;
+    margin-right: 10px;
+    float: left;
+}
+.phone-select dd{
+    color: #f65;
+    font: 14px/16px "Microsoft YaHei";
+    padding-bottom: 3px;
+    overflow: hidden;
+}
+.phone-select .name{
+    color: #666;
+}
+.phone-select .iphone{
+    background: url('../image/index.foot.png')no-repeat -283px -62px;
+    width: 90px;
+    height: 28px;
+    margin-right: 6px;
+}
+.phone-select .android{
+    background: url('../image/index.foot.png')no-repeat -395px -62px;
+    width: 90px;
+    height: 28px;
+}
+.top-auto{
+    width: 1190px;
+    height: 88px;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: relative;
+}
+.top-auto>div{
+    float: left;
+}
+.reg-auto{
+    width: 990px;
+    margin: 0 auto;
+}
+.reg-top{
+    padding: 20px 0 15px;
+    overflow: hidden;
+    position: relative;
+}
+.reg-top a img{
+    float: left;
+}
+.reg-content{
+    background: #f3f3f3;
+}
+.reg-top h1{
+    float: left;
+    height: 40px;
+    color: #666;
+    font: 24px/40px "Microsoft YaHei";
+    border-left: 1px solid #ccc;
+    padding: 0 0 0 10px;
+    margin: 25px 0 0 10px;
+}
+.has_number{
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    color: #333;
+    font-size: 12px;
+    font-family: "SimSun";
+}
+.has_number a{
+    color: #08d;
+}
+.gl-body{
+    width: 990px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+.reg-l{
+    width: 693px;
+    padding: 40px 0 0 50px;
+}
+.reg-l-tag{
+    overflow: hidden;
+}
+.reg-l-t-list{
+    width: 109px;
+    margin-left: 96px;
+    background: url('../image/index.t_b_2.jpg') no-repeat 0 bottom;
+    font: 20px/22px "Microsoft YaHei";
+    color: #333;
+    height: 38px;
+    text-align: center;
+    cursor: pointer;
+}
+.reg-l-t-list em{
+    display: inline-block;
+    zoom: 1;
+    width: 14px;
+    height: 22px;
+    background: url('../image/index.reg.png') no-repeat 0 -195px;
+    margin-right: 8px;
+}
+.left{
+    float: left;
+}
+
