@@ -4,15 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.0/axios.min.js"></script>
+    <link rel="shortcut icon" href="http://www.boqii.com/favicon.ico">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>用户登录</title>
 </head>
 
 <body>
 
     <div class="wrap">
+        <div class="reg-content">
+            <div class="reg-auto">
+                <div class="reg-top">
+                    <a href="javascript:;">
+                        <img src="./image/index.logo2.png" width="190" height="88" alt="">
+                    </a>
+                    <h1>用户登录</h1>
+                </div>
+                <div class="login-body">
+                    <form id="login_form">
+                        <div class="login-l left">
+                            <a href="javascript:;">
+                                <img src="./image/login.log3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="login-r right">
+                            <div class="login-list-tab">
+                                <div class="login-item-tab">账号密码登录</div>
+                                <div class="login-item-tab">手机动态码登录</div>
+                            </div>
+                            <div class="login-by-passwd">
+                                <div class="login_list">
+                                    <em class="username"></em>
+                                    <input type="text" name="username" id="username" placeholder="输入用户名/邮箱/手机号"
+                                        rel='账号不能为空'>
+                                </div>
+                                <div class="login_list">
+                                    <em class="password"></em>
+                                    <input type="text" id="password" name="password" rel="密码不能为空">
+                                </div>
+                                <div class="forget_list">
+                                    <div class="yzm borderd">
+                                        <span class="forget_list_yzmtxt">验证码：</span>
+                                        <input class="w80" type="text" name="seccodeverify" id="m_verify">
+                                        <div class="k_em tip">
 
+                                        </div>
+                                    </div>
+                                    <span class="yzm yzmone">6666</span>
+                                    <div class="change">
+                                        <a class="dj" href="javascript:;">换一个</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="login_tip" class="login_tip active mt10"></div>
+                            <div class="login_text mt10">
+                                <label class="auto_login left">
+                                    <input type="checkbox" name="remember">
+                                    <span>自动登录</span>
+                                </label>
+                                <div class="operate right">
+                                    <a href="javascript:;">忘记密码</a>　|　
+                                    <a href="javascript:;">免费注册</a>
+                                </div>
+                            </div>
+                            <div class="login_btn mt15 a_login_password">
+                                <a href="javascript:;" id="a_login">登 录</a>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
+<script src="./js/login.js"></script>
 
 </html>

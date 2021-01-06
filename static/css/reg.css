@@ -262,5 +262,166 @@ text-decoration: none;
 }
 .left{
     float: left;
+    display: inline;
 }
-
+.reg-l-body{
+    padding: 30px 0 0 80px;
+}
+.form-list{
+    margin: 10px 0 0;
+    overflow: hidden;
+}
+.form-list span{
+    float: left;
+    font-size: 16px;
+    line-height: 38px;
+    font-style: normal;
+    font-family:' 微软雅黑';
+    color: #666;
+    width: 100px;
+    text-align: right;
+}
+.spanone{
+    text-align: center !important;
+    letter-spacing: 5px;
+}
+div{
+    display: block;
+}
+.iphone-ipt{
+float: left;
+height: 38px;
+padding: 0 10px;
+}
+.iphone-ipt input{
+    width: 230px;
+    float: left;
+    font-size: 12px;
+    height: 28px;
+    padding: 5px 0;
+    border: none;
+    outline: none;
+}
+.iphone-ipt .ipt{
+    width: 80px;
+}
+.k_em{
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+.tip.err,.tip.err1,.tip.err2,.tip.err3{
+    color: #f65;
+    background: #ffebec;
+    border: 1px solid #ffbdbf;
+    padding: 4px 10px;
+    width: 210px;
+    height: 15px;
+    font-size: 12px;
+    /* float: left; */
+}
+.form-list .suc{
+    background: url('../image//index.login.png') no-repeat -5px -33px;
+}
+.errone{
+    display: none;
+}
+.borderd{
+    border: 1px solid #ddd;
+}
+.k_em,.k_em1,.k_em2,.k_em3,.k-em{
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+.cuowu{
+    background: url('../image/index.login.png') no-repeat -36px -33px;
+    border: none;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+}
+.tipone{
+    display: none;
+}
+.tip1{
+    background: url('../image/index.login.png')no-repeat -36px -33px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    margin: 10px 0 0 10px;
+    padding: 0;
+}
+.iphone-ipt img{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.change{
+    color: #08d;
+    cursor: pointer;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+a{
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+}
+.change a:hover{
+    color: #F65;
+    text-decoration: underline;
+}
+.obtain{
+    font-weight: normal;
+    float: left;
+    color: #ccc;
+    height: 38px;
+}
+.sms{
+    border: 1px solid #ddd;
+    background: #f3f3f3;
+    width: 108px;
+    text-align: center;
+    line-height: 38px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+}
+.agreement{
+    color: #333;
+    font-size: 12px;
+    padding: 20px 0 0;
+}
+.a{
+    color: #3366cc;
+}
+.agreement input{
+    vertical-align: middle;
+}
+.login-btn a{
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    height: 46px;
+}
+.login-btn{
+    font: 24px ;
+    margin-top: 20px;
+    width: 250px;
+    line-height: 46px;
+    font-family: '微软雅黑';
+    color: #fff;
+    background: #f65;
+    border: 1px solid #e35342;
+    text-align: center;
+    cursor: pointer;
+}
+.right{
+    display: inline;
+    float: right;
+}
+.reg-r img{
+    width: 180px;
+    height: 518px;
+    display: block;
+}

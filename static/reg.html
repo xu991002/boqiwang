@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="http://www.boqii.com/favicon.ico">
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.0/axios.min.js"></script>
     <link rel="stylesheet" href="./css/reg.css">
+
     <title>用户注册</title>
 
 </head>
@@ -85,8 +87,92 @@
                             </div>
                         </div>
                         <div>
-                            <div class="reg-l-body"></div>
+                            <div class="reg-l-body">
+                                <form id="form">
+                                    <div class="form-list">
+                                        <span>手机号码：</span>
+                                        <div class="iphone-ipt borderd">
+                                            <input class="teliphone" style="color: #666;" type="text"
+                                                placeholder="请输入手机号" maxlength="11">
+                                        </div>
+                                        <div class="k_em">
+                                            <div class="tip err errone">请输入手机号码！</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-list">
+                                        <span>设置密码：</span>
+                                        <div class="iphone-ipt borderd">
+                                            <input class="password" style="color: #666;" type="password"
+                                                placeholder="6-20大小写英文字母、数字或符号" maxlength="11">
+                                        </div>
+                                        <div class="k_em1">
+                                            <div class="tip err1 errone">请输入密码！</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-list">
+                                        <span>确认密码：</span>
+                                        <div class="iphone-ipt borderd">
+                                            <input class="password1" style="color: #666;" type="password"
+                                                placeholder="请再次输入密码" maxlength="11">
+                                        </div>
+                                        <div class="k_em2">
+                                            <div class="tip err2 errone">请再次输入密码！</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-list">
+                                        <span>昵称：</span>
+                                        <div class="iphone-ipt borderd">
+                                            <input class="user" style="color: #666;" type="text" placeholder="请输入昵称"
+                                                maxlength="11">
+                                        </div>
+                                        <div class="k_em3">
+                                            <div class="tip err3 errone">请输入昵称！</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-list">
+                                        <span>验证码：</span>
+                                        <div class="iphone-ipt borderd">
+                                            <input class="ipt" style="color: #666;" type="text">
+                                            <div class="k-em">
+                                                <div class="tip1 tipone"></div>
+                                            </div>
+
+                                        </div>
+                                        <span class="iphone-ipt spanone">
+                                            6666
+                                        </span>
+                                        <div class="change">
+                                            <a href="javascript:;">看不清？换一张</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-list">
+                                        <span>&nbsp;</span>
+                                        <label class="agreement left">
+                                            <input class="chk" type="checkbox"> 我已阅读并同意
+                                            <a href="javascript:;" class="a">《波奇网服务协议》</a>
+                                        </label>
+                                    </div>
+                                    <div class="form-list">
+                                        <span>&nbsp;</span>
+                                        <div class="login-btn left">
+                                            <a class="dj" href="javascript:;">注 册</a>
+                                        </div>
+                                    </div>
+                                    <div class="form-list">
+                                        <span>&nbsp;</span>
+
+                                    </div>
+
+                                </form>
+                            </div>
+
                         </div>
+                    </div>
+                    <div class="reg-r right">
+                        <a href="javascript:;">
+                            <img src="./image/index.reg3.jpg" alt="">
+                        </a>
                     </div>
 
                 </div>
@@ -94,7 +180,7 @@
         </div>
 
     </div>
-
+    <script src="./js/reg.js"></script>
 </body>
 
 </html>

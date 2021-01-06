@@ -1,6 +1,7 @@
 var express=require('express')
 var app=express()
 var mysql=require('mysql')
+const bodyParser = require('body-parser')
 var connection=mysql.createConnection({
     host:'localhost',
     user:'root',
@@ -17,6 +18,8 @@ app.use((req, res, next) => {
     res.header('Allow', 'GET, POST, PATCH, OPTIONS, PUT, DELETE')
     next();
 });
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: false}))
 
 // 首页
 app.get('/index1', (req, res)=> {
@@ -120,6 +123,28 @@ app.get('/index1', (req, res)=> {
          })
         })
       })
+      // 注册
+        app.put('/reg', (req, res)=> {
+            var a=req.body.a
+            var b=req.body.b
+            var c=req.body.c
+            console.log(a,b,c)
+            connection.query(`insert into register(iphone,user,password) values ('${a}','${b}','${c}')`,function(err,rows){
+            res.send({
+              data:rows,
+              status:200
+            })
+            })
+          })
+        // 登录
+        app.get('/login', (req, res)=> {
+          connection.query(`select *from register`,function(err,rows){
+              res.send({
+                data:rows,
+                status:200
+              })
+          })
+        })
      
 
 

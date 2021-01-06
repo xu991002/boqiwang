@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.reg-auto{
+    width: 990px;
+    margin: 0 auto;
+}
+.reg-top{
+    padding: 20px 0 15px;
+    overflow: hidden;
+    position: relative;
+}
+.reg-top a img{
+    float: left;
+}
+.reg-content{
+    background: #f3f3f3;
+}
+.reg-top h1{
+    float: left;
+    height: 40px;
+    color: #666;
+    font: 24px/40px "Microsoft YaHei";
+    border-left: 1px solid #ccc;
+    padding: 0 0 0 10px;
+    margin: 25px 0 0 10px;
+}
+.has_number{
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    color: #333;
+    font-size: 12px;
+    font-family: "SimSun";
+}
+.has_number a{
+    color: #08d;
+}
+.login-body{
+    padding: 9px;
+    overflow: hidden;
+    background: #FFF;
+    border: 1px solid #DDD;
+}
+.login-r{
+    width: 410px;
+    padding: 25px 35px 0 0;
+}
+.left{
+    float: left;
+}
+.right{
+    display: inline;
+    float: right;
+}
+.login-list-tab{
+    border: 1px solid #ddd;
+    height: 48px;
+}
+.login-item-tab:nth-child(1){
+    border-right: 1px solid #ddd;
+}
+.login-item-tab{
+    float: left;
+    width: 49.5%;
+    height: 45px;
+    border-bottom: 3px solid #fff;
+    text-align: center;
+    line-height: 49px;
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+}
+.login_list{
+    border: 1px solid #ddd;
+    height: 48px;
+    padding: 0 13px 0 7px;
+    margin-top: -1px;
+}
+.login_list input{
+    float: left;
+    width: 350px;
+    height: 28px;
+    padding: 10px 0 10px 7px;
+    font-size: 14px;
+    color: #666;
+    border: none;
+    outline: none;
+}
+.login_list em{
+    float: left;
+    width: 30px;
+    height: 24px;
+    background: url('../image/index.login.png') no-repeat;
+    margin: 12px 0 0;
+}
+em.password{
+    background-position: -30px 0;
+}
+.forget_list{
+    margin-top: 10px;
+    overflow: hidden;
+}
+.login-body .login-r .yzm{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.borderd{
+    width: 224px;
+    float: left;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+.forget_list span{
+    float: left;
+    font-size: 16px;
+    line-height: 38px;
+    color: #666;
+    width: 100px;
+    text-align: right;
+}
+.forget_list_yzmtxt{
+    position: relative;
+    left: -3px;
+    top: 0px;
+}
+.yzm input{
+    float: left;
+    height: 28px;
+    padding: 5px 0;
+    font-size: 14px;
+    line-height: 28px;
+    border: none;
+    color: #666;
+    outline: none;
+    
+}
+.yzm{
+    text-align: center !important;
+}
+.w80{
+    width: 80px;
+}
+
+.k_em{
+    width: 30px;
+    /* height: 30px; */
+    float: left;
+}
+.yzm .tip.err{
+    background: url('../image/index.login.png') no-repeat -36px -33px;
+    border: none;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+}
+.tip{
+    margin: 10px 0 0 10px;
+}
+.change{
+    color: #08d;
+    cursor: pointer;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+.login-body .login-r .change{
+    margin-top: 18px;
+    font-size: 12px;
+}
+.change a{
+    text-decoration: none;
+
+}
+.login_text{
+    overflow: hidden;
+}
+.mt10{
+margin-top:10px ;
+}
+.auto_login{
+    color: #666;
+    font-size: 12px;
+}
+.auto_login input{
+    vertical-align: middle;
+}
+.auto_login span{
+    vertical-align: middle;
+}
+.operate{
+    color: #ccc;
+    font-size: 12px;
+}
+.operate a{
+    color: #666;
+    text-decoration: none;
+}
+.login_btn{
+    font-size: 24px;
+    line-height: 48px;
+    color: #fff;
+    background: #f65;
+    border: 1px solid #e35342;
+    text-align: center;
+    cursor: pointer;
+}
+.mt15{
+    margin-top: 15px;
+}
+.login_btn a{
+    display: block;
+    height: 46px;
+    color: #fff;
+    text-decoration: none;
+}
+.login_tip{
+    color: #f65;
+    background: #ffebec;
+    border: 1px solid #ffbdbf;
+    padding: 7px 10px;
+    font-size: 12px;
+}
+.active{
+    display: none;
+}
+.cuowu{
+    background: url('../image/index.login.png') no-repeat -36px -33px;
+    border: none;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+}
+.suc{
+    background: url('../image//index.login.png') no-repeat -5px -33px;
+   margin: 10px 0 0 10px;
+}
+.yzmone{
+    letter-spacing: 5px;
+}
