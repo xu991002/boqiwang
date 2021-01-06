@@ -1,9 +1,8 @@
-
-// 猫咪百科
+// 小宠百科
 const bk_top_left = document.querySelector('.bk-top-left ul')
 const baike_nav = document.querySelectorAll('.baike-nav span')
 function getData(type_id = 1) {
-    axios.get('http://localhost:3000/cat', {
+    axios.get('http://localhost:3000/fish', {
         params: {
             type_id
         }
@@ -63,11 +62,11 @@ axios.get('http://localhost:3000/experts').then(res => {
 }).catch(err => {
     console.log(err);
 })
-//猫咪用品
+//水族用品
 const use_center = document.querySelector('.use-center ul');
 const use_center_list = document.querySelectorAll('.use_tit li');
 function getCatUse(type_id = 1) {
-    axios.get('http://localhost:3000/cat_supplies', {
+    axios.get('http://localhost:3000/fish_supplies', {
         params: {
             type_id
         }
@@ -79,7 +78,7 @@ function getCatUse(type_id = 1) {
                         <li>
                             <a href="javascript:;">
                                 <img src="${item.img}" alt="">
-                                <p>${item.titile}</p>
+                                <p>${item.title}</p>
                                 <span>${item.price}</span>
                             </a>
                         </li>
@@ -100,51 +99,4 @@ use_center_list.forEach((item, index) => {
         }
         this.classList.add('cat_show')
     }
-})
-
-// 区域
-const dog_area = document.querySelector('.dog_area dl')
-
-axios.get('http://localhost:3000/area').then(res => {
-    var html = ''
-    html += `
-        <dt>
-            <span>参您在&nbsp;&nbsp;&nbsp;</span>
-            <em>上海</em>
-        </dt>
-    `
-    res.data.data.forEach(item => {
-        html += `
-                <dd>${item.area}</dd>
-            `
-    })
-
-    dog_area.innerHTML = html
-}).catch(err => {
-    console.log(err);
-})
-dog_area.onclick = function () {
-    const dog_area_txt=document.querySelector('.dog_area>span')
-    if(event.target.nodeName=='DD'){
-        dog_area_txt.innerHTML=event.target.innerText
-    }
-}
-
-// 热门城市
-const dog_serve_left = document.querySelector('.dog_serve_left dl')
-
-axios.get('http://localhost:3000/area_limt').then(res => {
-    var html = ''
-    html += `
-        <dt>热门城市</dt>
-    `
-    res.data.data.forEach(item => {
-        html += `
-                <dd><i></i><span>${item.area}</span> </dd>                
-            `
-    })
-
-    dog_serve_left.innerHTML = html
-}).catch(err => {
-    console.log(err);
 })

@@ -917,6 +917,235 @@ input {
   overflow: hidden;
 }
 
+.use-baike .use-cont .use-right .use-right-bottom .groom-ti p {
+  color: #e35342 !important;
+}
+
+.dog_serve {
+  width: 1190px;
+  margin: 30px auto 0;
+}
+
+.dog_serve .dog_serve_top {
+  border-bottom: 2px solid #ccc;
+  height: 38px;
+}
+
+.dog_serve .dog_serve_top h2 {
+  float: left;
+  font-size: 26px;
+  font-weight: normal;
+  font-family: "Microsoft YaHei";
+  color: #f65;
+  width: 199px;
+}
+
+.dog_serve .dog_serve_top .dog_area {
+  float: left;
+  width: 185px;
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.dog_serve .dog_serve_top .dog_area i {
+  display: block;
+  width: 13px;
+  height: 21px;
+  background: url("../image/splice6.png") no-repeat -158px -111px;
+  margin: 0 4px 0 0;
+}
+
+.dog_serve .dog_serve_top .dog_area span {
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  color: #f65;
+  white-space: nowrap;
+}
+
+.dog_serve .dog_serve_top .dog_area div {
+  margin-left: 10px;
+  position: relative;
+}
+
+.dog_serve .dog_serve_top .dog_area div:hover p {
+  border-bottom-color: #fff;
+}
+
+.dog_serve .dog_serve_top .dog_area div:hover dl {
+  display: block;
+}
+
+.dog_serve .dog_serve_top .dog_area div p {
+  border: 1px solid #e6e6e6;
+  font-size: 12px;
+  height: 22px;
+  width: 70px;
+  padding: 0 7px;
+  line-height: 22px;
+  cursor: pointer;
+  color: #999;
+  position: relative;
+  z-index: 2;
+  background: #fff;
+}
+
+.dog_serve .dog_serve_top .dog_area div p i {
+  display: inline-block;
+  width: 8px;
+  height: 4px;
+  background: url("../image/splice6.png") no-repeat -181px -111px;
+  margin-left: 3px;
+  vertical-align: 2px;
+}
+
+.dog_serve .dog_serve_top .dog_area div dl {
+  display: none;
+  position: absolute;
+  width: 198px;
+  background: #fff;
+  left: 0;
+  top: 23px;
+  border: 1px solid #e6e6e6;
+  padding: 3px 0 10px;
+  z-index: 1;
+}
+
+.dog_serve .dog_serve_top .dog_area div dl dt {
+  border-bottom: 1px solid #e6e6e6;
+  margin: 0 10px;
+  padding: 5px 0;
+  overflow: hidden;
+}
+
+.dog_serve .dog_serve_top .dog_area div dl dt span {
+  font-style: normal;
+  color: #989898;
+  font-size: 12px;
+}
+
+.dog_serve .dog_serve_top .dog_area div dl dt em {
+  float: left;
+  color: #f65;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  cursor: pointer;
+}
+
+.dog_serve .dog_serve_top .dog_area div dl dd {
+  float: left;
+  margin: 10px 10px 0;
+  cursor: pointer;
+  color: #333;
+  font-size: 12px;
+}
+
+.dog_serve .dog_serve_top .dog_area div dl dd:hover {
+  color: #f65;
+}
+
+.dog_serve .dog_serve_top .dog_serve_top_right {
+  float: right;
+  width: 271px;
+  height: 20px;
+  background: url("../image/splice6.png") no-repeat 0 0;
+  margin: 10px 0 0;
+}
+
+.dog_serve .dog_serve_cont {
+  overflow: hidden;
+}
+
+.dog_serve .dog_serve_cont .dog_serve_left {
+  float: left;
+  width: 171px;
+  border-left: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  height: 391px;
+  padding: 14px;
+}
+
+.dog_serve .dog_serve_cont .dog_serve_left dl {
+  overflow: hidden;
+}
+
+.dog_serve .dog_serve_cont .dog_serve_left dl dt {
+  padding-bottom: 17px;
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+  color: #f65;
+}
+
+.dog_serve .dog_serve_cont .dog_serve_left dl dd {
+  width: 85px;
+  float: left;
+  padding: 0 0 16px;
+  display: flex;
+  align-items: center;
+}
+
+.dog_serve .dog_serve_cont .dog_serve_left dl dd i {
+  width: 8px;
+  height: 14px;
+  background: url("../image/splice6.png") no-repeat -132px -111px;
+  margin: 1px 0 0;
+}
+
+.dog_serve .dog_serve_cont .dog_serve_left dl dd span {
+  margin: 0 4px;
+  color: #333;
+  font-family: "SimSun";
+  font-size: 12px;
+}
+
+.dog_serve .dog_serve_cont .dog_serve_middle {
+  float: left;
+  width: 700px;
+  height: 420px;
+}
+
+.dog_serve .dog_serve_cont .dog_serve_right {
+  width: 248px;
+  height: 419px;
+  border: 1px solid #e6e6e6;
+  border-top: none;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.dog_serve .dog_serve_cont .dog_serve_right ul li {
+  width: 248px;
+  height: 80px;
+  margin-top: 20px;
+}
+
+.dog_serve .dog_serve_cont .dog_serve_right ul li p {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 12px;
+}
+
+.dog_serve .dog_serve_cont .dog_serve_right ul li div h2 {
+  font: 20px/22px "Microsoft YaHei";
+  color: #333;
+  padding: 8px 0 0;
+  cursor: pointer;
+}
+
+.dog_serve .dog_serve_cont .dog_serve_right ul li div h2:hover {
+  color: #ff6655;
+}
+
+.dog_serve .dog_serve_cont .dog_serve_right ul li div span {
+  display: block;
+  padding: 8px 0 0;
+  color: #999;
+  line-height: 20px;
+  font-size: 12px;
+}
+
 .foot-service {
   background: #f65;
   height: 90px;

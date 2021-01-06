@@ -22,43 +22,38 @@ app.use((req, res, next) => {
 app.get('/index', function (req, res) {
   res.send('hello world')
 })
-
-
+// 区域
+app.get('/area', function (req, res) {
+  connection.query(`select * from area`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+// 热门区域
+app.get('/area_limt', function (req, res) {
+  connection.query(`select * from area limit 0,24`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
 //  水族
-app.get('/animals', function (req, res) {
-  res.send('hello world')
+app.get('/fish', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from fish where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
 })
-
-//   猫咪
-app.get('/cat', function (req, res) {
-  res.send('hello world')
-})
-
-
-//   狗狗
-app.get('/dog', function (req, res) {
-  res.send('hello world')
-})
-
-
-//   爬虫
-app.get('/crawler', function (req, res) {
-  res.send('hello world')
-})
-
-//   商城
-app.get('/mall', function (req, res) {
-  res.send('hello world')
-})
-
-//   小宠
-app.get('/pet', function (req, res) {
-  res.send('hello world')
-})
-
-app.get('/brand', function (req, res) {
-  var type_id=req.query.type_id
-  connection.query(`select * from brand where type_id=${type_id}`, function (err, rows, fields) {
+// 水族用品
+app.get('/fish_supplies', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from fish_supplies where type_id=${type_id}`, function (err, rows, fields) {
     res.send({
       data: rows,
       status: 200
@@ -66,9 +61,121 @@ app.get('/brand', function (req, res) {
   })
 })
 
+//   猫咪
+app.get('/cat', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from cat where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+// 猫咪用品
+app.get('/cat_supplies', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from cat_supplies where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
 
+//   狗狗
+app.get('/dog', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from dog where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
 
+// 狗狗用品
+app.get('/dog_supplies', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from dog_supplies where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
 
+//   爬虫
+app.get('/reptitle', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from reptitle where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+
+// 狗狗用品
+app.get('/reptitle_supplies', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from reptitle_supplies where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+
+//   小宠
+app.get('/small', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from small where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+// 推荐专家
+app.get('/experts', function (req, res) {
+  connection.query(`select * from experts`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+// 小宠用品
+app.get('/small_supplies', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from small_supplies where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+
+// 品牌馆
+app.get('/brand_nav', function (req, res) {
+  var type_id = req.query.type_id1
+  console.log(type_id);
+  connection.query(`select * from brand_nav where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+app.get('/brand', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from brand where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
 app.listen(3000, () => {
-  console.log('启动成功')
+  console.log('服务启动成功')
 })
