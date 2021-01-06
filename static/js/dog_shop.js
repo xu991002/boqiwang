@@ -8,6 +8,63 @@ bn_index.onmouseover = function () {
 bn_index.onmouseout = function () {
     point.style.borderRight = '1px solid #ccc'
 }
+// 轮播图
+const banner = document.querySelector('.banner');
+const pic = document.querySelectorAll('.container img');
+const list = document.querySelectorAll('.banner li');
+const section = document.querySelector('section')
+console.log(section);
+var index = 0;
+
+function autoPlay() {
+    index++;
+    if (index > 1) {
+        index = 0;
+    }
+    for (var i = 0; i < pic.length; i++) {
+        pic[i].classList.remove('current');
+        list[i].classList.remove('active')
+    }
+    pic[index].classList.add('current')
+    list[index].classList.add('active');
+    console.log(index);
+    if (index == 0) {
+        section.style.backgroundColor = 'rgb(226, 239, 209)';
+    } else if (index == 1) {
+        section.style.backgroundColor = 'rgb(192, 223, 251)';
+    }
+}
+autoPlay()
+list.forEach(function (item, index_list) {
+    item.onmouseover = function () {
+        for (var i = 0; i < pic.length; i++) {
+            pic[i].classList.remove('current');
+            list[i].classList.remove('active')
+        }
+        index = index_list;
+
+        pic[index].classList.add('current')
+        this.classList.add('active')
+        if (index == 0) {
+            section.style.backgroundColor = 'rgb(226, 239, 209)';
+        } else if (index == 1) {
+            section.style.backgroundColor = 'rgb(192, 223, 251)';
+        }
+    }
+})
+
+
+// 实现轮播效果
+var timer = setInterval(autoPlay, 2000);
+
+//鼠标进入时停止自动播放        
+banner.onmouseover = function () {
+    clearInterval(timer);
+}
+//鼠标离开时自动播放
+banner.onmouseleave = function () {
+    timer = setInterval(autoPlay, 2000);
+}
 //水族推荐商品
 const dog1_area = document.querySelector('.dog1-area-cont ul')
 function shop(type_id = 1) {
