@@ -60,7 +60,56 @@ app.get('/fish_supplies', function (req, res) {
     })
   })
 })
-
+// 水族商城
+app.get('/fish_shop', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from fish_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+//水族商城1楼
+app.get('/fish_shop_one', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from fish_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+//水族商城2楼
+app.get('/fish_shop_two', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from fish_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+//水族商城3楼
+app.get('/fish_shop_three', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from fish_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+//水族商城4楼
+app.get('/fish_shop_four', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from fish_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
 //   猫咪
 app.get('/cat', function (req, res) {
   var type_id = req.query.type_id
@@ -92,7 +141,6 @@ app.get('/dog', function (req, res) {
     })
   })
 })
-
 // 狗狗用品
 app.get('/dog_supplies', function (req, res) {
   var type_id = req.query.type_id
@@ -103,7 +151,54 @@ app.get('/dog_supplies', function (req, res) {
     })
   })
 })
-
+app.get('/dog_shop', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from dog_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+//狗狗商城1楼
+app.get('/dog_shop_one', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from dog_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })  })
+})
+//狗狗商城2楼
+app.get('/dog_shop_two', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from dog_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+//狗狗商城3楼
+app.get('/dog_shop_three', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from dog_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+//狗狗商城4楼
+app.get('/dog_shop_four', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from dog_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
 //   爬虫
 app.get('/reptitle', function (req, res) {
   var type_id = req.query.type_id
