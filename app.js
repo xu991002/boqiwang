@@ -1,4 +1,3 @@
-
 var express = require('express')
 var app = express()
 var mysql = require('mysql')
@@ -9,7 +8,8 @@ var connection = mysql.createConnection({
   database: 'boqi'
 })
 connection.connect()
-
+app.use(express.json()) // for parsing application/json
+app.use(express.urlencoded({ extended: true }))
 // express header头解决跨域
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*')
@@ -18,135 +18,132 @@ app.use((req, res, next) => {
   res.header('Allow', 'GET, POST, PATCH, OPTIONS, PUT, DELETE')
   next();
 });
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended: false}))
-
 // 首页
 
-app.get('/index1', (req, res)=> {
-  connection.query(`select * from index1 where type_id=1`,function(err,rows){
-   res.send({
-     data:rows,
-     status:200
-   })
+app.get('/index1', (req, res) => {
+  connection.query(`select * from index1 where type_id=1`, function (err, rows) {
+    res.send({
+      data: rows,
+      status: 200
+    })
   })
+})
+// 首页 type_id=2
+app.get('/index2', (req, res) => {
+  connection.query(`select * from index1 where type_id=2`, function (err, rows) {
+    res.send({
+      data: rows,
+      status: 200
+    })
   })
-  // 首页 type_id=2
-  app.get('/index2', (req, res)=> {
-    connection.query(`select * from index1 where type_id=2`,function(err,rows){
-     res.send({
-       data:rows,
-       status:200
-     })
+})
+// 首页 type_id=3
+app.get('/index3', (req, res) => {
+  connection.query(`select * from index1 where type_id=3`, function (err, rows) {
+    res.send({
+      data: rows,
+      status: 200
     })
+  })
+})
+// 首页 type_id=4
+app.get('/index4', (req, res) => {
+  connection.query(`select * from index1 where type_id=4`, function (err, rows) {
+    res.send({
+      data: rows,
+      status: 200
     })
-    // 首页 type_id=3
-  app.get('/index3', (req, res)=> {
-    connection.query(`select * from index1 where type_id=3`,function(err,rows){
-     res.send({
-       data:rows,
-       status:200
-     })
+  })
+})
+// 首页 type_id=5
+app.get('/index5', (req, res) => {
+  connection.query(`select * from index1 where type_id=5`, function (err, rows) {
+    res.send({
+      data: rows,
+      status: 200
     })
+  })
+})
+// 首页 type_id=6
+app.get('/index6', (req, res) => {
+  connection.query(`select * from index1 where type_id=6`, function (err, rows) {
+    res.send({
+      data: rows,
+      status: 200
     })
-    // 首页 type_id=4
-    app.get('/index4', (req, res)=> {
-      connection.query(`select * from index1 where type_id=4`,function(err,rows){
-       res.send({
-         data:rows,
-         status:200
-       })
-      })
-      })
-      // 首页 type_id=5
-    app.get('/index5', (req, res)=> {
-      connection.query(`select * from index1 where type_id=5`,function(err,rows){
-       res.send({
-         data:rows,
-         status:200
-       })
-      })
-      })
-      // 首页 type_id=6
-    app.get('/index6', (req, res)=> {
-      connection.query(`select * from index1 where type_id=6`,function(err,rows){
-       res.send({
-         data:rows,
-         status:200
-       })
-      })
-      })
-       // 首页 type_id=7
-    app.get('/index7', (req, res)=> {
-      connection.query(`select * from index1 where type_id=7`,function(err,rows){
-       res.send({
-         data:rows,
-         status:200
-       })
-      })
-      })
-       // 首页 type_id=8
-    app.get('/index8', (req, res)=> {
-      connection.query(`select * from index1 where type_id=8`,function(err,rows){
-       res.send({
-         data:rows,
-         status:200
-       })
-      })
-      })
-       // 首页 type_id=9
-    app.get('/index9', (req, res)=> {
-      connection.query(`select * from index1 where type_id=9`,function(err,rows){
-       res.send({
-         data:rows,
-         status:200
-       })
-      })
-      })
-         // 首页 type_id=10
-    app.get('/index10', (req, res)=> {
-      connection.query(`select * from index1 where type_id=10`,function(err,rows){
-       res.send({
-         data:rows,
-         status:200
-       })
-      })
-      })
-      // 首页列表狗狗
-      app.get('/index11', (req, res)=> {
-        var id=req.query.id
-        var tyid=req.query.tyid
-        console.log(id,tyid)
-        connection.query(`select * from nav_txt where type_id1=${id} and type_id=${tyid}`,function(err,rows){
-         res.send({
-           data:rows,
-           status:200
-         })
-        })
-      })
-      // 注册
-        app.put('/reg', (req, res)=> {
-            var a=req.body.a
-            var b=req.body.b
-            var c=req.body.c
-            console.log(a,b,c)
-            connection.query(`insert into register(iphone,user,password) values ('${a}','${b}','${c}')`,function(err,rows){
-            res.send({
-              data:rows,
-              status:200
-            })
-            })
-          })
-        // 登录
-        app.get('/login', (req, res)=> {
-          connection.query(`select *from register`,function(err,rows){
-              res.send({
-                data:rows,
-                status:200
-              })
-          })
-        })
-     
+  })
+})
+// 首页 type_id=7
+app.get('/index7', (req, res) => {
+  connection.query(`select * from index1 where type_id=7`, function (err, rows) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+// 首页 type_id=8
+app.get('/index8', (req, res) => {
+  connection.query(`select * from index1 where type_id=8`, function (err, rows) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+// 首页 type_id=9
+app.get('/index9', (req, res) => {
+  connection.query(`select * from index1 where type_id=9`, function (err, rows) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+// 首页 type_id=10
+app.get('/index10', (req, res) => {
+  connection.query(`select * from index1 where type_id=10`, function (err, rows) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+// 首页列表狗狗
+app.get('/index11', (req, res) => {
+  var id = req.query.id
+  var tyid = req.query.tyid
+  console.log(id, tyid)
+  connection.query(`select * from nav_txt where type_id1=${id} and type_id=${tyid}`, function (err, rows) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+// 注册
+app.put('/reg', (req, res) => {
+  var a = req.body.a
+  var b = req.body.b
+  var c = req.body.c
+  console.log(a, b, c)
+  connection.query(`insert into register(iphone,user,password) values ('${a}','${b}','${c}')`, function (err, rows) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+// 登录
+app.get('/login', (req, res) => {
+  connection.query(`select *from register`, function (err, rows) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+
 
 app.get('/index', function (req, res) {
   res.send('hello world')
@@ -277,7 +274,8 @@ app.get('/cat_shop_one', function (req, res) {
     res.send({
       data: rows,
       status: 200
-    })  })
+    })
+  })
 })
 //猫咪商城2楼
 app.get('/cat_shop_two', function (req, res) {
@@ -346,7 +344,8 @@ app.get('/dog_shop_one', function (req, res) {
     res.send({
       data: rows,
       status: 200
-    })  })
+    })
+  })
 })
 //狗狗商城2楼
 app.get('/dog_shop_two', function (req, res) {
@@ -397,9 +396,9 @@ app.get('/reptitle_supplies', function (req, res) {
       data: rows,
       status: 200
     })
+  })
 
-    
-//   小宠
+  //   小宠
   app.get('/pet', function (req, res) {
     res.send('hello world')
   })
@@ -451,7 +450,8 @@ app.get('/small_shop_one', function (req, res) {
     res.send({
       data: rows,
       status: 200
-    })  })
+    })
+  })
 })
 //小宠商城2楼
 app.get('/small_shop_two', function (req, res) {
@@ -505,5 +505,4 @@ app.get('/brand', function (req, res) {
 })
 app.listen(3000, () => {
   console.log('服务启动成功')
-})
 })
