@@ -130,7 +130,55 @@ app.get('/cat_supplies', function (req, res) {
     })
   })
 })
-
+// 猫咪商品推荐
+app.get('/cat_shop', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from cat_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+// 猫咪商城1楼
+app.get('/cat_shop_one', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from cat_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })  })
+})
+//猫咪商城2楼
+app.get('/cat_shop_two', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from cat_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+//猫咪商城3楼
+app.get('/cat_shop_three', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from cat_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+//猫咪商城4楼
+app.get('/cat_shop_four', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from cat_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
 //   狗狗
 app.get('/dog', function (req, res) {
   var type_id = req.query.type_id
@@ -151,6 +199,7 @@ app.get('/dog_supplies', function (req, res) {
     })
   })
 })
+//狗狗推荐商品
 app.get('/dog_shop', function (req, res) {
   var type_id = req.query.type_id
   connection.query(`select * from dog_shop where type_id=${type_id}`, function (err, rows, fields) {
@@ -210,7 +259,7 @@ app.get('/reptitle', function (req, res) {
   })
 })
 
-// 狗狗用品
+// 爬虫用品
 app.get('/reptitle_supplies', function (req, res) {
   var type_id = req.query.type_id
   connection.query(`select * from reptitle_supplies where type_id=${type_id}`, function (err, rows, fields) {
@@ -250,7 +299,55 @@ app.get('/small_supplies', function (req, res) {
     })
   })
 })
-
+//小宠推荐商品
+app.get('/small_shop', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from small_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+//小宠商城1楼
+app.get('/small_shop_one', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from small_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })  })
+})
+//小宠商城2楼
+app.get('/small_shop_two', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from small_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+//小宠商城3楼
+app.get('/small_shop_three', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from small_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
+//小宠商城4楼
+app.get('/small_shop_four', function (req, res) {
+  var type_id = req.query.type_id
+  connection.query(`select * from small_shop where type_id=${type_id}`, function (err, rows, fields) {
+    res.send({
+      data: rows,
+      status: 200
+    })
+  })
+})
 // 品牌馆
 app.get('/brand_nav', function (req, res) {
   var type_id = req.query.type_id1
