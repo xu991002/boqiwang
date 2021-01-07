@@ -1,0 +1,504 @@
+img {
+    display: block;
+}
+input {
+    outline: none;
+}
+// 头部
+header {
+    height: 37px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    font: 14px/36px "Arial", "Microsoft Yahei";
+    .brand_header {
+        width: 1190px;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        .brand_header_left {
+            width: 209px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 37px;
+            div:nth-child(1) {
+                i {
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    background: url("../image/splice4.png") no-repeat 0 0;
+                }
+                a {
+                    color: #e53;
+                }
+            }
+            div:nth-child(2) {
+                position: relative;
+                padding: 0 10px;
+                box-sizing: border-box;
+                border-right: 1px solid transparent;
+                border-left: 1px solid transparent;
+                &:hover div {
+                    display: block;
+                }
+                div {
+                    display: none;
+                    position: absolute;
+                    left: -1px;
+                    top: 38px;
+                    background: #fff;
+                    border: 1px solid #ccc;
+                    border-top: none;
+                    width: 450px;
+                    padding: 8px 0;
+                    box-sizing: border-box;
+                    dl {
+                        border-bottom: 1px dotted #ccc;
+                        padding: 3px 15px;
+                        box-sizing: border-box;
+                        overflow: hidden;
+                        line-height: 37px;
+                        dt {
+                            float: left;
+                            color: #999;
+                        }
+                        dd {
+                            float: left;
+                            margin: -2px 18px 0 0;
+                            padding: 2px 8px;
+                            white-space: nowrap;
+                            &:hover {
+                                color: #e53;
+                            }
+                        }
+                    }
+                    dl:nth-child(4) {
+                        border: none;
+                    }
+                }
+                &:hover {
+                    border-right: 1px solid #ccc;
+                    border-left: 1px solid #ccc;
+                }
+                i {
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    background: url("../image/splice4.png") no-repeat 0 0;
+                }
+                .bn_sprice1 {
+                    background-position: -31px 0;
+                }
+                .bn_sprice2 {
+                    width: 8px;
+                    height: 8px;
+                    background-position: 0 -61px;
+                }
+                strong {
+                    font-weight: bold;
+                    padding-right: 10px;
+                    color: #e53;
+                    box-sizing: border-box;
+                }
+            }
+        }
+        .brand_header_right {
+            width: 338px;
+            height: 37px;
+            ul {
+                height: 37px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li {
+                    position: relative;
+                    a {
+                        padding: 0 10px;
+                        box-sizing: border-box;
+                        &:hover {
+                            text-decoration: underline;
+                            color: #e53;
+                        }
+                    }
+                }
+                li:nth-child(2) {
+                    a {
+                        border-left: 1px solid #ccc;
+                    }
+                }
+                li:nth-child(3) {
+                    border-right: 1px solid transparent;
+                    border-left: 1px solid transparent;
+                    &:hover dl {
+                        display: block;
+                    }
+                    &:hover {
+                        border-left: 1px solid #ccc;
+                        border-right: 1px solid #ccc;
+                    }
+                    &:hover > a {
+                        border-left: 1px solid transparent;
+                        border-right: 1px solid transparent;
+                    }
+                    a {
+                        border-left: 1px solid #ccc;
+                        border-right: 1px solid #ccc;
+                        padding-right: 11px;
+                    }
+                    dl {
+                        position: absolute;
+                        right: -1px;
+                        top: 37px;
+                        display: none;
+                        width: 230px;
+                        padding: 10px;
+                        border: 1px solid #ccc;
+                        background: #fff;
+                        dt {
+                            width: 100px;
+                            margin-right: 10px;
+                            float: left;
+                        }
+                        dd {
+                            color: #f65;
+                            font: 14px/16px "Microsoft YaHei";
+                            padding-bottom: 3px;
+                            overflow: hidden;
+                            .iphone {
+                                display: block;
+                                padding: 0;
+                                width: 100%;
+                                border: none;
+                                background: url("../image/splice1.png") no-repeat -283px -62px;
+                                width: 90px;
+                                height: 28px;
+                                margin-right: 6px;
+                            }
+                            .android {
+                                display: block;
+                                padding: 0;
+                                width: 100%;
+                                border: none;
+                                background: url("../image/splice1.png") no-repeat -395px -62px;
+                                width: 90px;
+                                height: 28px;
+                            }
+                        }
+                        .name {
+                            color: #666;
+                        }
+                    }
+                }
+                li:nth-child(4) {
+                    margin: -5px;
+                    border-left: 1px solid transparent;
+                    border-right: 1px solid transparent;
+                    a {
+                        border-right: 1px solid #ccc;
+                    }
+                    &:hover {
+                        border-left: 1px solid #ccc;
+                        border-right: 1px solid #ccc;
+                    }
+                    &:hover > a {
+                        border-left: 1px solid transparent;
+                        border-right: 1px solid transparent;
+                    }
+                    a {
+                        border-left: 1px solid transparent;
+                    }
+                    &:hover div {
+                        display: flex;
+                    }
+                }
+                li:nth-child(5) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-left: 1px solid transparent;
+                    border-right: 1px solid transparent;
+                    &:hover div {
+                        display: block;
+                    }
+                    div {
+                        display: none;
+                        position: absolute;
+                        top: 37px;
+                        right: -1px;
+                        width: 91px;
+                        border: 1px solid #ccc;
+                        background: #fff;
+                        p {
+                            width: 91px;
+                            padding-left: 5px;
+                            box-sizing: border-box;
+                            line-height: 28px;
+                            overflow: hidden;
+                            i {
+                                float: left;
+                                width: 20px;
+                                height: 14px;
+                                background: url("../image/splice4.png") no-repeat -60px -45px;
+                                margin: 8px 8px 0 0;
+                            }
+                        }
+                    }
+                    &:hover {
+                        border-left: 1px solid #ccc;
+                        border-right: 1px solid #ccc;
+                    }
+                    img {
+                        width: 15px;
+                        height: 13px;
+                        margin: 0px -5px 0 5px;
+                    }
+                    a {
+                        border: none;
+                    }
+                }
+            }
+        }
+        .point > div {
+            position: absolute;
+            right: -1px;
+            top: 37px;
+            width: 201px;
+            border: 1px solid #ccc;
+            background: #fff;
+            overflow: hidden;
+            height: 150px;
+            display: none;
+            justify-content: space-between;
+            dl {
+                border-right: 1px dashed #ccc;
+                padding: 10px;
+                float: left;
+                width: 80px;
+                dd {
+                    font: 14px/20px "Microsoft YaHei";
+                    color: #e53;
+                    padding: 4px 0 0;
+                    overflow: hidden;
+                }
+                dd:nth-child(3) {
+                    color: #000;
+                    i {
+                        display: inline-block;
+                        background: url("../image/splice5.png") no-repeat scroll -195px -77px;
+                        height: 14px;
+                        margin-left: 6px;
+                        width: 16px;
+                    }
+                }
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+}
+// 图片
+.bn_top_img {
+    width: 1190px;
+    margin: auto;
+}
+.top-auto {
+    width: 1190px;
+    height: 130px;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: relative;
+    div {
+        float: left;
+    }
+    .logo {
+        width: 240px;
+        height: 100px;
+        img {
+            width: 240px;
+            height: 100px;
+        }
+    }
+    .top-search {
+        width: 600px;
+        margin: 34px 0 0 55px;
+        .serch_ipt {
+            display: flex;
+            .search {
+                width: 494px;
+                padding: 5px 10px;
+                height: 26px;
+                font: 16px/26px "Microsoft YaHei";
+                color: #ccc;
+                border: 3px solid #e53;
+                border-right: none;
+            }
+            .search-btn {
+                height: 42px;
+                font: 18px/40px "Microsoft YaHei";
+                background: #e53;
+                text-align: center;
+                width: 80px;
+                color: #fff;
+                cursor: pointer;
+                border: none;
+            }
+        }
+        .search-list {
+            margin-top: 5px;
+            color: #666;
+            font-size: 12px;
+            a {
+                color: #666;
+                margin: 0 6px 0 0;
+                &:hover {
+                    color: #ff6655;
+                }
+            }
+        }
+    }
+    .top-ad {
+        margin: 35px 0;
+    }
+    .right {
+        float: right;
+    }
+}
+// banner
+.bn_banner {
+    width: 100%;
+    background-color: #eee;
+    img {
+        width: 1190px;
+        margin: 0 auto;
+        height: auto;
+    }
+}
+// 内容
+.bn_cooperation {
+    width: 1190px;
+    margin: 20px auto 0;
+    overflow: hidden;
+    .bn_cooperation_right {
+        float: right;
+        border: 1px solid #e5e5e5;
+        padding: 0 20px;
+        height: 339px;
+        margin-top: 10px;
+        width: 330px;
+        box-sizing: border-box;
+        h2 {
+            text-align: center;
+            color: #333;
+            font-weight: 700;
+            border-bottom: 2px solid #e53;
+            line-height: 46px;
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li {
+                width: 90px;
+                height: 40px;
+                margin: 15px 5px 0 0;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+.bn_cooperation_daqo {
+    width: 1190px;
+    margin: 30px auto 30px;
+    .bn_daqo_top {
+        border-bottom: 2px solid #ececec;
+        height: 32px;
+        line-height: 32px;
+        color: #e53;
+        margin-bottom: 10px;
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+            width: 74px;
+            text-align: center;
+            border-bottom: 2px solid #e53;
+        }
+    }
+    .bn_daqo_cont {
+        overflow: hidden;
+        .bn_daqo_cont_left {
+            float: left;
+            width: 170px;
+            dl {
+                width: 100%;
+                height: 117px;
+                padding-bottom: 15px;
+                box-sizing: border-box;
+                dt {
+                    font-weight: bold;
+                    color: #000;
+                    padding-bottom: 5px;
+                    box-sizing: border-box;
+                }
+                dd {
+                    float: left;
+                    width: 62px;
+                    line-height: 18px;
+                    margin: 5px 10px 0 0;
+                    cursor: pointer;
+                    overflow: hidden;
+                    font-size: 12px;
+                    text-align: center;
+                }
+                .bn_show {
+                    background: #ee5533;
+                    color: #fff;
+                }
+            }
+        }
+        .bn_daqo_cont_right {
+            float: right;
+            width: 990px;
+            ul:nth-child(1) {
+                width: 100%;
+                overflow: hidden;
+                li {
+                    float: left;
+                    background: #e6e6e6;
+                    color: #333;
+                    width: 140px;
+                    border-right: 1px solid #d4d3d3;
+                    line-height: 34px;
+                    text-align: center;
+                    cursor: pointer;
+                }
+                .bn_active {
+                    background: #ee5533;
+                    color: #fff;
+                }
+            }
+            .bn_cont {
+                width: 990px;
+                dl {
+                    overflow: hidden;
+                    width: 1010px;
+                    dd {
+                        img {
+                            width: 148px;
+                            height: 68px;
+                            border: 1px solid #e5e5e5;
+                            float: left;
+                            margin: 15px 18px 0 0;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
