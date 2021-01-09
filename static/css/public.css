@@ -335,6 +335,10 @@ input {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+.nav-item .ashow {
+  display: block;
+}
+
 .content-left dl {
   float: left;
   width: 230px;
@@ -385,13 +389,13 @@ input {
   float: left;
   width: 11px;
   height: 17px;
-  background: url("../image/splice.png") no-repeat;
+  background: url("../image/index.icon.png") no-repeat;
   padding: 0 7px 0 0;
   margin: 1px 0 0;
 }
 
 .nav-item em {
-  background: url("../image/splice.png") no-repeat -143px 0;
+  background: url("../image/index.icon.png") no-repeat -143px 0;
   width: 9px;
   height: 5px;
   display: inline-block;
@@ -400,7 +404,7 @@ input {
 }
 
 .nav-item .market {
-  background: url("../image/splice.png") no-repeat -143px 0;
+  background: url("../image/index.icon.png") no-repeat -143px 0;
   background-position: -220px -58px;
   width: 23px;
   height: 15px;

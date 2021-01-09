@@ -113,7 +113,6 @@ app.get('/index10', (req, res) => {
 app.get('/index11', (req, res) => {
   var id = req.query.id
   var tyid = req.query.tyid
-  console.log(id, tyid)
   connection.query(`select * from nav_txt where type_id1=${id} and type_id=${tyid}`, function (err, rows) {
     res.send({
       data: rows,
@@ -126,7 +125,6 @@ app.put('/reg', (req, res) => {
   var a = req.body.a
   var b = req.body.b
   var c = req.body.c
-  console.log(a, b, c)
   connection.query(`insert into register(iphone,user,password) values ('${a}','${b}','${c}')`, function (err, rows) {
     res.send({
       data: rows,
@@ -486,7 +484,6 @@ app.get('/small_shop_four', function (req, res) {
 // 品牌馆
 app.get('/brand_nav', function (req, res) {
   var type_id = req.query.type_id1
-  console.log(type_id);
   connection.query(`select * from brand_nav where type_id=${type_id}`, function (err, rows, fields) {
     res.send({
       data: rows,
@@ -502,6 +499,180 @@ app.get('/brand', function (req, res) {
       status: 200
     })
   })
+})
+// 波奇商城首页
+app.get('/1', (req, res) => {
+  connection.query(`SELECT * FROM nav where type_id=1 `, function (err, rows) {
+      res.send(rows)
+      if (err) {
+          console.log( err)
+      }
+  }
+ )
+})
+app.get('/2', (req, res) => {
+  connection.query(`SELECT * FROM nav where type_id=2 `, function (err, rows) {
+      res.send(rows)
+      if (err) {
+          console.log( err)
+      }
+  }
+ )
+})
+app.get('/3', (req, res) => {
+  connection.query(`SELECT * FROM nav where type_id=3 `, function (err, rows) {
+      res.send(rows)
+      if (err) {
+          console.log( err)
+      }
+  }
+ )
+})
+app.get('/4', (req, res) => {
+  connection.query(`SELECT * FROM nav where type_id=4 `, function (err, rows) {
+      res.send(rows)
+      if (err) {
+          console.log( err)
+      }
+  }
+ )
+})
+app.get('/5', (req, res) => {
+  connection.query(`SELECT * FROM nav where type_id=5 `, function (err, rows) {
+      res.send(rows)
+      if (err) {
+          console.log( err)
+      }
+  }
+ )
+})
+app.get('/6', (req, res) => {
+  connection.query(`SELECT * FROM shop_inedx where type_id=1 `, function (err, rows) {
+      res.send(rows)
+      if (err) {
+          console.log( err)
+      }
+  }
+ )
+})
+app.get('/7', (req, res) => {
+  connection.query(`SELECT * FROM comment`, function (err, rows) {
+      res.send(rows)
+      if (err) {
+          console.log( err)
+      }
+  }
+ )
+})
+app.get('/nva1', (req, res) => {
+  connection.query(`SELECT * FROM dog_supplies_nav`, function (err, rows) {
+      res.send(rows)
+      if (err) {
+          console.log( err)
+      }
+  }
+ )
+})
+app.get('/nva2', (req, res) => {
+  connection.query(`SELECT * FROM cat_supplies_nav`, function (err, rows) {
+      res.send(rows)
+      if (err) {
+          console.log( err)
+      }
+  }
+ )
+})
+app.get('/nva3', (req, res) => {
+  connection.query(`SELECT * FROM small_supplies_nav`, function (err, rows) {
+      res.send(rows)
+      if (err) {
+          console.log( err)
+      }
+  }
+ )
+})
+app.get('/nva4', (req, res) => {
+  connection.query(`SELECT * FROM flsh_supplies_nav`, function (err, rows) {
+      res.send(rows)
+      if (err) {
+          console.log( err)
+      }
+  }
+ )
+})
+app.get('/nva5', (req, res) => {
+  connection.query(`SELECT * FROM reptitle_supplies_nav`, function (err, rows) {
+      res.send(rows)
+      if (err) {
+          console.log( err)
+      }
+  }
+ )
+})
+app.get('/dog:id', (req, res) => {
+  var a=req.params.id
+  connection.query(`SELECT * FROM dog_supplie where type_id=${a}`, function (err, rows) {
+      console.log(rows);
+      res.send(rows)
+      if (err) {
+          console.log( err)
+      }
+  }
+ )
+})
+app.get('/cat:id', (req, res) => {
+  var a=req.params.id
+  connection.query(`SELECT * FROM cat_supplies where type_id=${a}`, function (err, rows) {
+      console.log(rows);
+      res.send(rows)
+      if (err) {
+          console.log( err)
+      }
+  }
+ )
+})
+app.get('/small:id', (req, res) => {
+  var a=req.params.id
+  connection.query(`SELECT * FROM small_supplies where type_id=${a}`, function (err, rows) {
+      console.log(rows);
+      res.send(rows)
+      if (err) {
+          console.log( err)
+      }
+  }
+ )
+})
+app.get('/flsh:id', (req, res) => {
+  var a=req.params.id
+  connection.query(`SELECT * FROM flsh_supplie where type_nav=${a}`, function (err, rows) {
+      console.log(rows);
+      res.send(rows)
+      if (err) {
+          console.log( err)
+      }
+  }
+ )
+})
+app.get('/reptitle:id', (req, res) => {
+  var a=req.params.id
+  connection.query(`SELECT * FROM reptitle_supplies where type_id=${a}`, function (err, rows) {
+      console.log(rows);
+      res.send(rows)
+      if (err) {
+          console.log( err)
+      }
+  }
+ )
+})
+app.get('/img:id', (req, res) => {
+  var a=req.params.id
+  connection.query(`SELECT * FROM brand where type_id=${a}`, function (err, rows) {
+      res.send(rows)
+      if (err) {
+          console.log( err)
+      }
+  }
+ )
 })
 app.listen(3000, () => {
   console.log('服务启动成功')

@@ -431,6 +431,76 @@ header .brand_header .point > div dl img {
   float: right;
 }
 
+nav {
+  height: 36px;
+  background: #e53;
+  margin-top: 15px;
+}
+
+.nav-auto {
+  width: 1190px;
+  margin: 0 auto;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-auto-left {
+  display: flex;
+  height: 35px;
+  align-items: center;
+}
+
+.nav-auto-left > li {
+  height: 35px;
+  line-height: 37px;
+  padding: 0 17px;
+  color: #fff;
+}
+
+.nav-auto-left > .nav-auto-1 {
+  width: 170px;
+  background: #c20;
+  height: 35px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-auto-left > .nav-auto-1 > em {
+  display: inline-block;
+  width: 16px;
+  height: 10px;
+  background: url("../image/splice4.png") no-repeat 0 -21px;
+  margin-top: 13px;
+}
+
+.nav-auto-left > li:hover {
+  background-color: #9a0000;
+}
+
+.nav-auto-right {
+  width: 142px;
+  background: #c20;
+  padding: 0 0 0 10px;
+  border: 2px solid #c20;
+  border-bottom: none;
+  color: #fff;
+  overflow: hidden;
+  height: 34px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-auto-right > em {
+  display: inline-block;
+  width: 20px;
+  height: 19px;
+  background: url("../image/splice4.png") no-repeat -30px -21px;
+  margin: 6px 10px 5px 0;
+}
+
 .bn_banner {
   width: 100%;
   background-color: #eee;
